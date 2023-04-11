@@ -2,37 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  background-color: rgb(29, 76, 120);
+  margin: 2% 15% 0 15%;
+  padding: 2% 0;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.outputList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin: 0 15%;
+  background-color: rgb(167, 181, 194);
 }
 
-.App-link {
-  color: #61dafb;
+.outputList input[type="checkbox"]:checked+p {
+  text-decoration: line-through;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#trash {
+  border: none;
+  align-self: center;
+  margin-right: 3%;
+  background-color: rgb(29, 76, 120);
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0.5% 1%;
+  border-radius: 3px;
+}
+
+#trash:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+#checkToDo {
+  display: flex;
+}
+
+form {
+  display: flex;
+  margin: 0 15%;
+}
+
+form #newTodo {
+  padding: 0.7% 1%;
+  width: 70vw;
+}
+
+form #button {
+  width: 7vw;
+  font-size: 15px;
+}
+
+form #button:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 17px;
+  padding-left: 2%;
+  width: 50vw;
+  text-align: left;
 }
